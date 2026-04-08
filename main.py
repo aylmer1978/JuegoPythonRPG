@@ -1,6 +1,6 @@
 import time
 
-from Character import *
+from Character import Personaje
 from Weapons import *
 from Monsters import *
 import names
@@ -14,7 +14,6 @@ def LanzamientoCheck(dados, caras):
         if Dice(caras) > 3:
             aciertos += 1
     return aciertos
-    print(f"Has hecho {aciertos} éxitos.")
 
 def Combate(ataque, defensa):
     aciertoAtaque = LanzamientoCheck(ataque, 6)
